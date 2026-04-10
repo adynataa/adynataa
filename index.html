@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Organizer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h2>EventKu</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#layanan">Layanan</a></li>
+            <li><a href="#form">Daftar</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section>
+    <section class="home">
+    
+    <div class="home-text">
+        <h1>Wujudkan Event Impianmu Bersama Kami</h1>
+        <p>
+            Kami adalah Event Organizer profesional yang siap membantu setiap momen 
+            penting dalam hidup Anda menjadi lebih berkesan, elegan, dan tak terlupakan. 
+            Dari pernikahan hingga event perusahaan, kami hadir dengan konsep terbaik.
+        </p>
+
+        <button>Mulai Sekarang</button>
+    </div>
+
+    <div class="home-image">
+        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30" alt="Event">
+    </div>
+
+</section>
+
+<section id="layanan">
+    <h2>Layanan</h2>
+    <div class="card-container">
+      <div class="card-container">
+
+    <div class="card">
+        <img src="download.jpeg" alt="Wedding">
+        <h3>Wedding Organizer</h3>
+        <p>Acara pernikahan elegan dan berkesan</p>
+    </div>
+
+    <div class="card">
+        <img src="images.jpeg" alt="Birthday">
+        <h3>Birthday Party</h3>
+        <p>Ulang tahun seru dan meriah</p>
+    </div>
+
+    <div class="card">
+        <img src="download (1).jpeg" alt="Corporate">
+        <h3>Corporate Event</h3>
+        <p>Event profesional untuk perusahaan</p>
+    </div>
+
+</div>
+    </div>
+</section>
+
+<section id="form">
+    <h2>Pendaftaran</h2>
+    <form id="eventForm">
+
+        <input type="text" id="nama" placeholder="Nama">
+        <div class="error" id="errNama"></div>
+
+        <input type="email" id="email" placeholder="Email">
+        <div class="error" id="errEmail"></div>
+
+        <input type="number" id="hp" placeholder="No HP">
+        <div class="error" id="errHp"></div>
+
+        <select id="event">
+            <option value="">Pilih Event</option>
+            <option>Wedding</option>
+        </select>
+        <div class="error" id="errEvent"></div>
+
+        <input type="radio" name="bayar"> Transfer
+        <input type="radio" name="bayar"> Cash
+        <div class="error" id="errBayar"></div>
+
+        <button type="submit">Daftar</button>
+    </form>
+</section>
+
+<section>
+    <h2>Data Dinamis</h2>
+    <input type="text" id="newItem">
+    <button onclick="addItem()">Tambah</button>
+    <div id="itemList"></div>
+</section>
+
+</main>
+
+<footer>Footer</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html><section class="about">
+
+    <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="About Us">
+    </div>
+
+    <div class="about-text">
+        <h2>Tentang Kami</h2>
+        <p>
+            EventKu adalah Event Organizer profesional yang berfokus pada
+            kualitas, kreativitas, dan kepuasan klien. Kami telah membantu
+            berbagai klien dalam menyelenggarakan acara spesial seperti
+            pernikahan, ulang tahun, hingga event perusahaan.
+        </p>
+
+        <p>
+            Dengan tim yang berpengalaman dan penuh dedikasi, kami selalu
+            memastikan setiap detail acara berjalan sempurna dan memberikan
+            pengalaman yang tak terlupakan.
+        </p>
+
+        <button>Pelajari Lebih Lanjut</button>
+    </div>
+
+</section><div class="card-container">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552" alt="Wedding">
+        <h3>Wedding Organizer</h3>
+        <p>Pernikahan elegan dengan konsep impian Anda.</p>
+
+        <h4 class="price">Rp 25.000.000</h4>
+        <button class="order-btn">Pesan Sekarang</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d" alt="Birthday">
+        <h3>Birthday Party</h3>
+        <p>Ulang tahun meriah dengan tema menarik.</p>
+
+        <h4 class="price">Rp 5.000.000</h4>
+        <button class="order-btn">Pesan Sekarang</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1503428593586-e225b39bddfe" alt="Corporate">
+        <h3>Corporate Event</h3>
+        <p>Event profesional untuk perusahaan Anda.</p>
+
+        <h4 class="price">Rp 20.000.000</h4>
+        <button class="order-btn">Pesan Sekarang</button>
+    </div>
+
+</div>
